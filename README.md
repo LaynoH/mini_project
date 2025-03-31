@@ -39,3 +39,11 @@ For the frontend the environment is as shown below:
 `npm run dev`
 ### browser
 `http://localhost:3000/`
+
+## Deployment
+I tried to deployed the project to render but failed to finish debugging for deployment issue.
+Both frontend and backed deployed successfully to Render. However, i still need some time to find out where did i failed to deploy correctly since nothing shown in the frontend page.
+### url for backend
+`https://mini-project-backend-a1ap.onrender.com`
+### url for frontend
+`https://mini-project-frontend-hnp7.onrender.com`
