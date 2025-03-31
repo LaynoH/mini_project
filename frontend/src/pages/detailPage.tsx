@@ -14,7 +14,7 @@ export default function DetailPage() {
 
     useEffect(() => {
         if (!router.isReady || !url) return;
-        fetch(`/api/news-detail?url=${encodeURIComponent(url as string)}`)
+        fetch(`/`${process.env.BACKEND_API_URL}/news-detail?url=${encodeURIComponent(url as string)}`)
         .then((res) => res.json())
         .then((data) => {
             // console.log("Data received:", data);  // for debugging
