@@ -10,7 +10,7 @@ export default async function handler(
 ) {
   try {
     const API_URL = process.env.BACKEND_API_URL;
-    const response = await fetch(`${API_BASE_URL}/news`); // calls Python API
+    const response = await fetch(`${API_URL}/news`); // calls Python API
     if (!response.ok) throw new Error("Failed to fetch news");
 
     const data: Data = await response.json();
