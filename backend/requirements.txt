@@ -59,7 +59,7 @@ PyMySQL==1.1.1
 pyparsing==2.4.7
 pyrsistent==0.17.3
 python-dateutil==2.8.1
-pyzmq==22.0.3
+pyzmq==22.3.0 --only-binary :all:
 regex==2021.4.4
 requests==2.32.3
 scapy==2.4.4
