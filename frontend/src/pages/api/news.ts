@@ -9,7 +9,8 @@ export default async function handler(
   res: NextApiResponse<Data>,
 ) {
   try {
-    const response = await fetch("http://127.0.0.1:8000/news"); // calls Python API
+    const API_URL = process.env.BACKEND_API_URL;
+    const response = await fetch(`${API_BASE_URL}/news`); // calls Python API
     if (!response.ok) throw new Error("Failed to fetch news");
 
     const data: Data = await response.json();
