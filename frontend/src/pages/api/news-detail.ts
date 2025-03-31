@@ -16,7 +16,7 @@ export default async function handler(
   try {
     console.log("Fetching news details from FastAPI with URL:", url);
     const API_URL = process.env.BACKEND_API_URL;
-    const response = await fetch(`${API_BASE_URL}/news-detail?url=${encodeURIComponent(url)}`);
+    const response = await fetch(`${API_URL}/news-detail?url=${encodeURIComponent(url)}`);
 
     
     if (!response.ok) {
