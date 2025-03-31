@@ -13,7 +13,7 @@ export default function NewsPage() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch(`${process.env.BACKEND_API_URL}/news`) // call API
+    fetch("/api/news") // call API
       .then((res) => res.json())
       .then((data) => {
         const formattedNews = data.map((item: string[]) => ({
